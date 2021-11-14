@@ -391,8 +391,9 @@
 
                         </ul>
                     </li>
-                    <li class="icon-bar"><a href="https://vnexpress.net/tat-ca" class="" Tất cả></a>
-                        <i class="fas fa-bars"></i>
+                    <li class="navbar__item icon-bar"><a href="https://vnexpress.net/tat-ca" class="">Tất cả <i
+                                class="fas fa-bars"></i></a>
+
                     </li>
                 </ul>
             </nav>
@@ -1385,6 +1386,57 @@
                 </div>
 
             </section>
+            <section class="col-xl-12" id="anh">
+                <ul class="anh__items d-flex">
+                    <li class="anh__title"> Ảnh</li>
+                </ul>
+                <div class="col-xl-12 anh__body d-flex">
+                    <div class="col-xl-9 anh__trai">
+                        <ul id="vertical">
+                            <li class="vertical__item">
+                                <img style="display:none" class="mySlides anh__trai-img"
+                                    src="https://i1-giaitri.vnecdn.net/2021/11/12/loc-dinh-ky-10-4750-1636615412-1768-3884-1636680892.jpg?w=900&h=540&q=100&dpr=1&fit=crop&s=_sfG2tKFNXArg6mjizATCA" />
+
+                            </li>
+                            <li class="vertical__item">
+                                <img style="display:none" class="mySlides anh__trai-img"
+                                    src="https://i1-vnexpress.vnecdn.net/2021/11/11/Duong-Phuoc-Hoa-Cai-Mep-6-1636620848.jpg?w=900&h=540&q=100&dpr=1&fit=crop&s=R_CthkFk8lGy9JjhotWUww" />
+
+                            </li>
+                            <li class="vertical__item">
+                                <img style="display:none" class="mySlides anh__trai-img"
+                                    src="https://i1-vnexpress.vnecdn.net/2021/11/10/QUYN6529-1636528023.jpg?w=900&h=540&q=100&dpr=1&fit=crop&s=e9aaEkStLW4Izah_IDnR6Q" />
+                            </li>
+                        </ul>
+                        <div class="anh__trai-button">
+                            <button class="w3-button w3-black display-left" onclick="plusDivs(-1)"><i
+                                    class="fas fa-chevron-up"></i></button>
+                            <button class="w3-button w3-black display-right" onclick="plusDivs(1)"><i
+                                    class="fas fa-chevron-down"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 anh__phai">
+                        <div class=" anh__phai-trai active">
+                            <h6 class="anh__phai-trai-header">Tuyến đường gần 1.000 tỷ đồng nối cụm cảng Cái Mép – Thị
+                                Vải</h6>
+                            <p class="">Tuyến đường Phước Hòa – Cái Mép (thị xã Phú Mỹ) hoàn thành, kết nối quốc lộ 51
+                                với cụm cảng Cái Mép – Thị Vải và khu công nghiệp.</p>
+                            <span>Giải trí <i class="fas fa-comment-alt"></i> 70</span>
+
+                        </div>
+                        <div class=" anh__phai-trai">
+                            <h6 class="anh__phai-trai-header">Tuyến đường gần 1.000 tỷ đồng nối cụm cảng Cái Mép – Thị
+                                Vải</h6>
+                            <p class="">Tuyến đường Phước Hòa – Cái Mép (thị xã Phú Mỹ) hoàn thành, kết nối quốc lộ 51
+                                với cụm cảng Cái Mép – Thị Vải và khu công nghiệp.</p>
+                            <span>Thời sự <i class="fas fa-comment-alt"></i> 70</span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
         </main>
         <footer class="container footer">
             <ul class="footer__top col-xl-12 d-flex">
@@ -1530,7 +1582,6 @@
                 pause: 4000,
 
                 keyPress: false,
-                controls: true,
 
 
                 rtl: false,
@@ -1563,6 +1614,28 @@
             });
 
         });
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

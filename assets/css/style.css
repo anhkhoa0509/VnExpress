@@ -276,6 +276,10 @@ html {
   opacity: 0.6;
 }
 
+.nav .navbar__items .icon-bar a {
+  color: var(--text--header-color);
+}
+
 .nav .navbar__items .icon-bar:hover {
   color: #b52759;
   opacity: 1;
@@ -806,6 +810,65 @@ html {
 
 #xe .xe__body .xe__phai .xe__phai-phai .xe__phai-phai-body .xe__phai-phai-logo {
   padding: 0;
+}
+
+#anh .anh__items {
+  list-style: none;
+  padding: 0;
+}
+
+#anh .anh__items .anh__title {
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--root-color);
+}
+
+#anh .anh__body .anh__trai {
+  position: relative;
+  padding: 0;
+}
+
+#anh .anh__body .anh__trai #vertical {
+  list-style: none;
+  -webkit-animation: linear 0.3s;
+          animation: linear 0.3s;
+  padding: 0;
+}
+
+#anh .anh__body .anh__trai #vertical .vertical__item .anh__trai-img {
+  width: 100%;
+}
+
+#anh .anh__body .anh__trai .anh__trai-button {
+  right: 24px;
+  bottom: 8%;
+  position: absolute;
+}
+
+#anh .anh__body .anh__trai .anh__trai-button button {
+  padding: 8px;
+  border-radius: 50%;
+  width: 40px;
+  background-color: #757575;
+  border: none;
+}
+
+#anh .anh__body .anh__trai .anh__trai-button button i {
+  color: white;
+}
+
+#anh .anh__body .anh__trai .anh__trai-button button:hover {
+  background-color: var(--text-body-hover);
+}
+
+#anh .anh__body .anh__phai {
+  background-color: #17191a;
+  color: #bdbdbd;
+}
+
+#anh .anh__body .anh__phai .anh__phai-trai .anh__phai-trai-header {
+  font-size: 18px;
+  padding: 12px 0 6px 0;
 }
 
 .footer {
