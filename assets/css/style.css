@@ -33,7 +33,7 @@ html {
   line-height: 2;
 }
 
-.header .header__left .today {
+.header .header__left #today {
   padding: 6px 0px 7px 15px;
   margin-left: 15px;
   border-left: 1px solid #ccc;
@@ -769,10 +769,6 @@ html {
   cursor: pointer;
 }
 
-#xe .xe__body .xe__trai {
-  border-right: 1px solid #ccc;
-}
-
 #xe .xe__body .xe__trai .xe__trai-img {
   width: 100%;
 }
@@ -783,6 +779,11 @@ html {
 
 #xe .xe__body .xe__phai {
   padding: 0;
+}
+
+#xe .xe__body .xe__phai .xe__phai-trai {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
 }
 
 #xe .xe__body .xe__phai .xe__phai-trai .xe__phai-trai-img {
@@ -812,6 +813,12 @@ html {
   padding: 0;
 }
 
+#anh {
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid #ccc;
+}
+
 #anh .anh__items {
   list-style: none;
   padding: 0;
@@ -826,6 +833,16 @@ html {
 #anh .anh__body .anh__trai {
   position: relative;
   padding: 0;
+  height: 473px;
+  overflow: hidden;
+}
+
+#anh .anh__body .anh__trai .tns-nav {
+  display: none;
+}
+
+#anh .anh__body .anh__trai .tns-inner {
+  margin: 0;
 }
 
 #anh .anh__body .anh__trai #vertical {
@@ -833,6 +850,7 @@ html {
   -webkit-animation: linear 0.3s;
           animation: linear 0.3s;
   padding: 0;
+  overflow: hidden;
 }
 
 #anh .anh__body .anh__trai #vertical .vertical__item .anh__trai-img {
@@ -864,10 +882,20 @@ html {
 #anh .anh__body .anh__phai {
   background-color: #17191a;
   color: #bdbdbd;
+  height: 473px;
 }
 
-#anh .anh__body .anh__phai .anh__phai-trai .anh__phai-trai-header {
-  font-size: 18px;
+#anh .anh__body .anh__phai .tns-nav {
+  display: none;
+}
+
+#anh .anh__body .anh__phai #vertical1 {
+  list-style: none;
+  padding: 0;
+}
+
+#anh .anh__body .anh__phai #vertical1 .vertical__item .anh__phai-trai .anh__phai-trai-header {
+  font-size: 16px;
   padding: 12px 0 6px 0;
 }
 

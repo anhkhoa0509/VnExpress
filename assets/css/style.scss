@@ -31,7 +31,7 @@ html {
     line-height: 2;
 
     .header__left {
-        .today {
+        #today {
             padding: 6px 0px 7px 15px;
             margin-left: 15px;
             border-left: 1px solid #ccc;
@@ -790,10 +790,10 @@ html {
 
     .xe__body {
         .xe__trai {
-            border-right: 1px solid #ccc;
 
             .xe__trai-img {
                 width: 100%;
+
             }
 
             .xe__trai-header {
@@ -805,6 +805,9 @@ html {
             padding: 0;
 
             .xe__phai-trai {
+                border-right: 1px solid #ccc;
+                border-left: 1px solid #ccc;
+
                 .xe__phai-trai-img {
                     width: 100%;
                 }
@@ -843,6 +846,9 @@ html {
 }
 
 #anh {
+    margin-top: 24px;
+    padding-top: 12px;
+    border-top: 1px solid #ccc;
 
     .anh__items {
         list-style: none;
@@ -859,15 +865,26 @@ html {
         .anh__trai {
             position: relative;
             padding: 0;
+            height: 473px;
+            overflow: hidden;
+
+            .tns-nav {
+                display: none;
+
+            }
+
+            .tns-inner {
+
+                margin: 0;
+            }
 
             #vertical {
                 list-style: none;
                 animation: linear 0.3s;
                 padding: 0;
+                overflow: hidden;
 
                 .vertical__item {
-
-
                     .anh__trai-img {
                         width: 100%;
                     }
@@ -902,14 +919,29 @@ html {
         .anh__phai {
             background-color: #17191a;
             color: #bdbdbd;
-            // color: #7da6bd;
+            height: 473px;
 
-            .anh__phai-trai {
-                .anh__phai-trai-header {
-                    font-size: 18px;
-                    padding: 12px 0 6px 0;
-                }
+            .tns-nav {
+                display: none;
             }
+
+            // color: #7da6bd;
+            #vertical1 {
+                list-style: none;
+                padding: 0;
+
+                .vertical__item {
+                    .anh__phai-trai {
+                        .anh__phai-trai-header {
+                            font-size: 16px;
+                            padding: 12px 0 6px 0;
+                        }
+                    }
+                }
+
+
+            }
+
         }
 
     }

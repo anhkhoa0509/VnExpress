@@ -18,6 +18,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/css/lightslider.min.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/js/lightslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 
 <body>
@@ -27,7 +29,7 @@
             <section class="header container">
                 <div class="header__left">
                     <a href="" class=""><img src="/assets//img/logo.svg" alt="" class="logo"></a>
-                    <span class="today">Thứ bảy, 13/11/2021</span>
+                    <span id="today"></span>
                 </div>
                 <div class="header__right">
                     <a href="tintuc24h" class=" clock__news"><i class="fas fa-clock"></i> Mới nhất</a>
@@ -1394,17 +1396,19 @@
                     <div class="col-xl-9 anh__trai">
                         <ul id="vertical">
                             <li class="vertical__item">
-                                <img style="display:none" class="mySlides anh__trai-img"
-                                    src="https://i1-giaitri.vnecdn.net/2021/11/12/loc-dinh-ky-10-4750-1636615412-1768-3884-1636680892.jpg?w=900&h=540&q=100&dpr=1&fit=crop&s=_sfG2tKFNXArg6mjizATCA" />
+                                <img class="mySlides anh__trai-img"
+                                    src="https://i1-dulich.vnecdn.net/2021/11/12/1-1636626304-1636687899.jpg?w=900&h=540&q=100&dpr=1&fit=crop&s=yn4OQw16a1nulIMuhGixEw" />
 
                             </li>
                             <li class="vertical__item">
-                                <img style="display:none" class="mySlides anh__trai-img"
-                                    src="https://i1-vnexpress.vnecdn.net/2021/11/11/Duong-Phuoc-Hoa-Cai-Mep-6-1636620848.jpg?w=900&h=540&q=100&dpr=1&fit=crop&s=R_CthkFk8lGy9JjhotWUww" />
-
+                                <img class="mySlides anh__trai-img"
+                                    src="https://i1-vnexpress.vnecdn.net/2021/11/14/QUYN7450-1636853748.jpg?w=900&h=540&q=100&dpr=1&fit=crop&s=NtijWKzBC_TAdzbtOQzRWQ" />
+                            <li class="vertical__item">
+                                <img class="mySlides anh__trai-img"
+                                    src="https://i1-vnexpress.vnecdn.net/2021/11/14/tt_1636865099.jpg?w=900&h=540&q=100&dpr=1&fit=crop&s=uR2bRIA-MbqXdmoXZ8UdLQ" />
                             </li>
                             <li class="vertical__item">
-                                <img style="display:none" class="mySlides anh__trai-img"
+                                <img class="mySlides anh__trai-img"
                                     src="https://i1-vnexpress.vnecdn.net/2021/11/10/QUYN6529-1636528023.jpg?w=900&h=540&q=100&dpr=1&fit=crop&s=e9aaEkStLW4Izah_IDnR6Q" />
                             </li>
                         </ul>
@@ -1417,22 +1421,45 @@
                         </div>
                     </div>
                     <div class="col-xl-3 anh__phai">
-                        <div class=" anh__phai-trai active">
-                            <h6 class="anh__phai-trai-header">Tuyến đường gần 1.000 tỷ đồng nối cụm cảng Cái Mép – Thị
-                                Vải</h6>
-                            <p class="">Tuyến đường Phước Hòa – Cái Mép (thị xã Phú Mỹ) hoàn thành, kết nối quốc lộ 51
-                                với cụm cảng Cái Mép – Thị Vải và khu công nghiệp.</p>
-                            <span>Giải trí <i class="fas fa-comment-alt"></i> 70</span>
+                        <ul id="vertical1">
+                            <li class="vertical__item">
+                                <div class=" anh__phai-trai active">
+                                    <h6 class="anh__phai-trai-header">Sắc thu rực rỡ trên vùng núi Alps</h6>
+                                    <p class="">Mùa thu đến, những ngôi làng chân núi ẩn hiện trong thảm lá vàng đỏ và
+                                        các ngọn núi cao chưa bị tuyết phủ trắng xóa.
+                                    </p>
+                                    <span>Du lịch</span>
 
-                        </div>
-                        <div class=" anh__phai-trai">
-                            <h6 class="anh__phai-trai-header">Tuyến đường gần 1.000 tỷ đồng nối cụm cảng Cái Mép – Thị
-                                Vải</h6>
-                            <p class="">Tuyến đường Phước Hòa – Cái Mép (thị xã Phú Mỹ) hoàn thành, kết nối quốc lộ 51
-                                với cụm cảng Cái Mép – Thị Vải và khu công nghiệp.</p>
-                            <span>Thời sự <i class="fas fa-comment-alt"></i> 70</span>
+                                </div>
+                            </li>
+                            <li class="vertical__item">
+                                <div class=" anh__phai-trai">
+                                    <h6 class="anh__phai-trai-header">Khu chợ dưới lòng đất TP HCM ế ẩm</h6>
+                                    <p class="">Tối 13/11, cuối tuần nhưng Central Market - chợ dưới lòng đất đầu tiên
+                                        của TP HCM - khá vắng, hàng loạt gian hàng đóng cửa.</p>
+                                    <span>Kinh doanh <i class="fas fa-comment-alt"></i> 88</span>
+                                </div>
+                            </li>
+                            <li class="vertical__item">
+                                <div class=" anh__phai-trai">
+                                    <h6 class="anh__phai-trai-header">Cảm xúc lẫn lộn của 4 thí sinh tại Chung kết
+                                        Olympia</h6>
+                                    <p class="">Trận chung kết căng thẳng khiến Hoàng Khánh, Hải An, Việt Thái và Duy
+                                        Anh trải qua cảm giác tiếc nuối, vui mừng đan xen.</p>
+                                    <span>Giáo dục <i class="fas fa-comment-alt"></i> 12</span>
+                                </div>
+                            </li>
+                            <li class="vertical__item">
+                                <div class=" anh__phai-trai">
+                                    <h6 class="anh__phai-trai-header">Gần 3 km đường vành đai dở dang sau bốn năm khởi
+                                        công</h6>
+                                    <p class="">Gần hai năm ngưng thi công, gần 3 km đường Vành đai 2 (TP Thủ Đức) ngổn
+                                        ngang vật liệu xây dựng, cỏ mọc um tùm.</p>
+                                    <span>Thời sự <i class="fas fa-comment-alt"></i> 32</span>
+                                </div>
+                            </li>
 
-                        </div>
+
                     </div>
                 </div>
 
@@ -1559,85 +1586,65 @@
             </div>
 
         </footer>
+
     </div>
+
     <script src="/assets/js/main.js"></script>
     <script>
-        $(document).ready(function () {
-            $("#lightSlider").lightSlider({
-                item: 1,
-                autoWidth: false,
-                slideMove: 0, // slidemove will be 1 if loop is true
-                slideMargin: 5,
+        var slider = tns({
+            container: '#vertical',
+            items: 1,
+            axis: 'vertical',
+            swipeAngle: 'false',
+            controls: false,
+            navAsThumbnails: false,
+            responsive: {
+                640: {
+                    edgePadding: 20,
+                    gutter: 20,
+                    items: 2
+                },
+                700: {
+                    gutter: 30
+                },
+                900: {
+                    items: 1
+                }
 
-                addClass: '',
-                mode: "slide",
-                // useCSS: true,
-                cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
-                easing: 'linear', //'for jquery animation',////
-
-                speed: 400, //ms'
-                auto: true,
-                loop: true,
-                slideEndAnimation: true,
-                pause: 4000,
-
-                keyPress: false,
-
-
-                rtl: false,
-                adaptiveHeight: false,
-
-                vertical: false,
-                verticalHeight: 500,
-                vThumbWidth: 100,
-
-                thumbItem: 10,
-                pager: true,
-                gallery: false,
-                galleryMargin: 5,
-                thumbMargin: 5,
-                currentPagerPosition: 'middle',
-
-                enableTouch: true,
-                enableDrag: true,
-                freeMove: true,
-                swipeThreshold: 40,
-
-                responsive: [],
-
-                onBeforeStart: function (el) {},
-                onSliderLoad: function (el) {},
-                onBeforeSlide: function (el) {},
-                onAfterSlide: function (el) {},
-                onBeforeNextSlide: function (el) {},
-                onBeforePrevSlide: function (el) {}
-            });
-
+            }
         });
+        var slider1 = tns({
+            container: '#vertical1',
+            items: 2,
+            axis: 'vertical',
+            swipeAngle: 'false',
+            controls: false,
+            navAsThumbnails: false,
+            responsive: {
+                640: {
+                    edgePadding: 20,
+                    gutter: 20,
+                    items: 2
+                },
+                700: {
+                    gutter: 30
+                },
+                900: {
+                    items: 2
+                }
 
-        var slideIndex = 1;
-        showDivs(slideIndex);
+            }
+        });
+        document.querySelector('.display-left').onclick = function () {
+            slider.goTo('next');
+            slider1.goTo('next');
 
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = x.length
-            }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex - 1].style.display = "block";
-        }
+        };
+        document.querySelector('.display-right').onclick = function () {
+            slider.goTo('prev');
+            slider1.goTo('prev');
+        };
     </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
